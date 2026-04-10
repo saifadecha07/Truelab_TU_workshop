@@ -1,0 +1,215 @@
+export const trucks = [
+  {
+    id: 'TK-001', plate: 'กข 1234 กรุงเทพ', driver: 'สมชาย มีสุข',
+    driverPhone: '081-234-5678', status: 'IN_TRANSIT',
+    origin: 'คลังบางจาก กรุงเทพฯ', destination: 'PTT สาขาอยุธยา',
+    route: 'บางจาก → PTT อยุธยา',
+    gps: { lat: 14.3456, lng: 100.5678, lastUpdate: '12:01:44', speed: 78 },
+    eSeal: 'LOCKED', sealId: 'ESL-20240410-001',
+    loadedVolume: 25000, currentVolume: 24850, expectedVolume: 25000,
+    departure: '08:30', eta: '14:00', fuelType: 'Diesel B7', temperature: 28.5,
+    compartments: [
+      { id: 1, capacity: 8000, loaded: 7950 },
+      { id: 2, capacity: 8500, loaded: 8440 },
+      { id: 3, capacity: 8500, loaded: 8460 },
+    ],
+  },
+  {
+    id: 'TK-002', plate: 'งจ 5678 ระยอง', driver: 'วิชัย รุ่งเรือง',
+    driverPhone: '089-876-5432', status: 'ALERT',
+    origin: 'คลังไทยออยล์ ชลบุรี', destination: 'PTT สาขาระยอง',
+    route: 'ไทยออยล์ → PTT ระยอง',
+    gps: { lat: 12.9235, lng: 100.8847, lastUpdate: '10:15:22', speed: 0 },
+    eSeal: 'UNLOCKED', sealId: 'ESL-20240410-002',
+    loadedVolume: 25000, currentVolume: 19800, expectedVolume: 25000,
+    departure: '07:00', eta: '12:30', fuelType: 'Gasohol 91', temperature: 31.2,
+    compartments: [
+      { id: 1, capacity: 8000, loaded: 6300 },
+      { id: 2, capacity: 8500, loaded: 6800 },
+      { id: 3, capacity: 8500, loaded: 6700 },
+    ],
+  },
+  {
+    id: 'TK-003', plate: 'ขค 9012 เชียงใหม่', driver: 'ประสิทธิ์ ดีงาม',
+    driverPhone: '062-345-6789', status: 'DELIVERED',
+    origin: 'คลัง IRPC ระยอง', destination: 'Shell สาขาเชียงใหม่',
+    route: 'IRPC → Shell เชียงใหม่',
+    gps: { lat: 18.7883, lng: 98.9853, lastUpdate: '09:45:00', speed: 0 },
+    eSeal: 'LOCKED', sealId: 'ESL-20240410-003',
+    loadedVolume: 22000, currentVolume: 22000, expectedVolume: 22000,
+    departure: '22:00 (ก.ค.)', eta: '09:30', fuelType: 'Diesel B10', temperature: 24.1,
+    compartments: [
+      { id: 1, capacity: 7500, loaded: 7500 },
+      { id: 2, capacity: 7500, loaded: 7500 },
+      { id: 3, capacity: 7000, loaded: 7000 },
+    ],
+  },
+  {
+    id: 'TK-004', plate: 'คง 3456 ขอนแก่น', driver: 'มานิต ฉลาดดี',
+    driverPhone: '043-456-7890', status: 'IN_TRANSIT',
+    origin: 'คลังขอนแก่น', destination: 'Esso สาขาอุดรธานี',
+    route: 'ขอนแก่น → Esso อุดร',
+    gps: { lat: 17.3647, lng: 102.8158, lastUpdate: '11:55:30', speed: 82 },
+    eSeal: 'LOCKED', sealId: 'ESL-20240410-004',
+    loadedVolume: 20000, currentVolume: 19950, expectedVolume: 20000,
+    departure: '10:00', eta: '15:30', fuelType: 'Gasohol 95', temperature: 29.8,
+    compartments: [
+      { id: 1, capacity: 7000, loaded: 6980 },
+      { id: 2, capacity: 6500, loaded: 6490 },
+      { id: 3, capacity: 6500, loaded: 6480 },
+    ],
+  },
+  {
+    id: 'TK-005', plate: 'จฉ 7890 สงขลา', driver: 'ธนกร ใจดี',
+    driverPhone: '074-567-8901', status: 'ALERT',
+    origin: 'คลังสงขลา', destination: 'PTT สาขาหาดใหญ่',
+    route: 'สงขลา → PTT หาดใหญ่',
+    gps: { lat: 7.0061, lng: 100.4747, lastUpdate: '08:30:11', speed: 0 },
+    eSeal: 'LOCKED', sealId: 'ESL-20240410-005',
+    loadedVolume: 18000, currentVolume: 17820, expectedVolume: 18000,
+    departure: '06:30', eta: '10:00', fuelType: 'Diesel B7', temperature: 33.5,
+    compartments: [
+      { id: 1, capacity: 6000, loaded: 5940 },
+      { id: 2, capacity: 6000, loaded: 5940 },
+      { id: 3, capacity: 6000, loaded: 5940 },
+    ],
+  },
+  {
+    id: 'TK-006', plate: 'ฉช 2345 นครราชสีมา', driver: 'สุรชัย ขยันทำ',
+    driverPhone: '044-678-9012', status: 'IN_TRANSIT',
+    origin: 'คลังนครราชสีมา', destination: 'Caltex สาขาพิมาย',
+    route: 'โคราช → Caltex พิมาย',
+    gps: { lat: 15.0028, lng: 102.1018, lastUpdate: '12:01:44', speed: 65 },
+    eSeal: 'LOCKED', sealId: 'ESL-20240410-006',
+    loadedVolume: 15000, currentVolume: 14980, expectedVolume: 15000,
+    departure: '11:00', eta: '13:30', fuelType: 'Gasohol 91', temperature: 30.2,
+    compartments: [
+      { id: 1, capacity: 5000, loaded: 4995 },
+      { id: 2, capacity: 5000, loaded: 4993 },
+      { id: 3, capacity: 5000, loaded: 4992 },
+    ],
+  },
+];
+
+export const pipelineNodes = [
+  {
+    id: 'PL-001', name: 'สถานีสูบสีชัง (Origin)',
+    location: 'เกาะสีชัง, ชลบุรี', status: 'NORMAL',
+    pressure: 820, pressureMin: 700, pressureMax: 900,
+    flowRate: 4250, flowMin: 4000, flowMax: 4500,
+    fuelType: 'Crude Oil', temperature: 35.2,
+    lastUpdate: '12:05:00', uptime: '99.8%', totalFlow: '1,247,800 บาร์เรล',
+  },
+  {
+    id: 'PL-002', name: 'สถานีกลาง (Midpoint)',
+    location: 'ชลบุรี', status: 'WARNING',
+    pressure: 450, pressureMin: 400, pressureMax: 550,
+    flowRate: 4180, flowMin: 4000, flowMax: 4500,
+    fuelType: 'Crude Oil', temperature: 36.8,
+    lastUpdate: '12:05:00', uptime: '98.1%', totalFlow: '1,247,650 บาร์เรล',
+  },
+  {
+    id: 'PL-003', name: 'โรงกลั่นไทยออยล์ (Destination)',
+    location: 'แหลมฉบัง, ชลบุรี', status: 'NORMAL',
+    pressure: 280, pressureMin: 250, pressureMax: 350,
+    flowRate: 4050, flowMin: 4000, flowMax: 4500,
+    fuelType: 'Crude Oil', temperature: 34.5,
+    lastUpdate: '12:05:00', uptime: '99.5%', totalFlow: '1,247,200 บาร์เรล',
+  },
+];
+
+export const vessels = [
+  {
+    id: 'VS-001', name: 'MV THAI ENERGY I', flag: '🇹🇭 TH',
+    imo: '9234567', type: 'Oil Tanker (VLCC)',
+    origin: 'Kuwait Port', destination: 'ท่าเรือแหลมฉบัง, ชลบุรี',
+    eta: '12 เม.ย. 06:00', status: 'EN_ROUTE',
+    ullageVolume: 185000, declaredVolume: 190000,
+    position: '8.5°N 80.2°E', speed: 12.5, heading: 'NE',
+    lastAIS: '11:50:00', fuelType: 'Crude Oil',
+    draught: '18.5 m', cargo: 'Kuwait Grade API 31',
+  },
+  {
+    id: 'VS-002', name: 'MT SIAM PETROLEUM', flag: '🇹🇭 TH',
+    imo: '9345678', type: 'Product Tanker (MR)',
+    origin: 'Singapore Refinery', destination: 'ท่าเรือศรีราชา, ชลบุรี',
+    eta: '11 เม.ย. 14:00', status: 'APPROACHING',
+    ullageVolume: 45200, declaredVolume: 45000,
+    position: '5.8°N 102.5°E', speed: 14.2, heading: 'N',
+    lastAIS: '11:55:00', fuelType: 'Diesel',
+    draught: '9.2 m', cargo: 'Gasoil 0.1% Sulphur',
+  },
+  {
+    id: 'VS-003', name: 'MV ANDAMAN CARRIER', flag: '🇵🇦 PAN',
+    imo: '9456789', type: 'Chemical Tanker',
+    origin: 'Port Klang, Malaysia', destination: 'ท่าเรือภูเก็ต',
+    eta: '10 เม.ย. 18:00', status: 'ALERT',
+    ullageVolume: 28500, declaredVolume: 30000,
+    position: '7.9°N 98.4°E (ล่าสุด)', speed: 0, heading: 'N/A',
+    lastAIS: '09:30:00', fuelType: 'Jet A-1',
+    draught: '7.8 m', cargo: 'Aviation Turbine Fuel',
+  },
+];
+
+export const alerts = [
+  {
+    id: 'ALT-001', type: 'E_SEAL_BREACH', severity: 'CRITICAL',
+    title: 'e-Seal ถูกเปิดโดยไม่ได้รับอนุญาต',
+    message: 'TK-002 (งจ 5678 ระยอง) ตรวจพบ e-Seal ESL-20240410-002 ถูกเปิดที่ กม.45 ถนนสุขุมวิท ชลบุรี',
+    entityId: 'TK-002', entityType: 'TRUCK', timestamp: '10:15:22', acknowledged: false,
+  },
+  {
+    id: 'ALT-002', type: 'VOLUME_DISCREPANCY', severity: 'CRITICAL',
+    title: 'ปริมาณน้ำมันขาดหาย > 20% (เกินเกณฑ์ 0.5%)',
+    message: 'TK-002 ตรวจสอบพบปริมาณ 19,800 L จากที่บรรทุก 25,000 L (ขาดหาย 20.8%) — สั่งระงับเส้นทางทันที',
+    entityId: 'TK-002', entityType: 'TRUCK', timestamp: '10:16:05', acknowledged: false,
+  },
+  {
+    id: 'ALT-003', type: 'GEOFENCE_BREACH', severity: 'CRITICAL',
+    title: 'รถออกนอกเส้นทาง Geofence',
+    message: 'TK-005 เบี่ยงเส้นทางออกนอก Geofence ระยะ 3.2 กม. บริเวณ อ.สะเดา สงขลา — หยุดส่งสัญญาณ GPS',
+    entityId: 'TK-005', entityType: 'TRUCK', timestamp: '08:30:11', acknowledged: false,
+  },
+  {
+    id: 'ALT-004', type: 'AIS_BLACKOUT', severity: 'CRITICAL',
+    title: 'สัญญาณ AIS ขาดหายจากเรือ',
+    message: 'MV ANDAMAN CARRIER (VS-003) ไม่ได้รับสัญญาณ AIS นานกว่า 2.5 ชั่วโมง — ตำแหน่งล่าสุด: ทะเลอันดามัน (7.9°N 98.4°E)',
+    entityId: 'VS-003', entityType: 'VESSEL', timestamp: '09:30:00', acknowledged: false,
+  },
+  {
+    id: 'ALT-005', type: 'PRESSURE_DROP', severity: 'WARNING',
+    title: 'ความดันท่อลดต่ำกว่าเกณฑ์',
+    message: 'Pipeline PL-002 (สถานีกลาง ชลบุรี) ความดัน 450 PSI อยู่ใกล้ขีดต่ำสุด (Min: 400 PSI) — ตรวจสอบวาล์ว V-14',
+    entityId: 'PL-002', entityType: 'PIPELINE', timestamp: '11:30:00', acknowledged: false,
+  },
+  {
+    id: 'ALT-006', type: 'VOLUME_DISCREPANCY', severity: 'WARNING',
+    title: 'Ullage เกินเอกสารรับรอง',
+    message: 'MT SIAM PETROLEUM (VS-002) รายงาน Ullage 45,200 L เกินจากเอกสาร B/L 200 L (0.44%) — รอการตรวจสอบเพิ่มเติม',
+    entityId: 'VS-002', entityType: 'VESSEL', timestamp: '07:00:00', acknowledged: true,
+  },
+  {
+    id: 'ALT-007', type: 'SPEED_ANOMALY', severity: 'INFO',
+    title: 'ความเร็วเรือลดลงผิดปกติ',
+    message: 'MV THAI ENERGY I (VS-001) ลดความเร็วจาก 14 เป็น 12.5 น็อต ในพื้นที่อ่าวไทย — สภาพอากาศแจ้งเตือน Sea State 4',
+    entityId: 'VS-001', entityType: 'VESSEL', timestamp: '06:45:00', acknowledged: true,
+  },
+];
+
+export const volumeChartData = [
+  { name: 'TK-001\nบางจาก', short: 'TK-001', origin: 25000, destination: 24850, discrepancy: 150 },
+  { name: 'TK-002\nไทยออยล์', short: 'TK-002', origin: 25000, destination: 19800, discrepancy: 5200 },
+  { name: 'TK-003\nIRPC', short: 'TK-003', origin: 22000, destination: 22000, discrepancy: 0 },
+  { name: 'TK-004\nขอนแก่น', short: 'TK-004', origin: 20000, destination: 19950, discrepancy: 50 },
+  { name: 'TK-005\nสงขลา', short: 'TK-005', origin: 18000, destination: 17820, discrepancy: 180 },
+  { name: 'TK-006\nโคราช', short: 'TK-006', origin: 15000, destination: 14980, discrepancy: 20 },
+];
+
+export const kpiData = {
+  totalVolumeToday: '125,000 L',
+  activeTrips: 4,
+  alertsUnack: 5,
+  complianceRate: '83.3%',
+  pipelineFlowRate: '12,480 L/hr',
+  vesselETA: '3 ลำ',
+};
