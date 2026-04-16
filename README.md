@@ -2,7 +2,7 @@
 
 > Front-end prototype created for the **Trustworthy AI Workshop Buildathon**
 
-Truelab is a dashboard prototype for monitoring fuel transport operations in one interface. The current version focuses on presenting operational data clearly through separate views for trucks, vessels, pipelines, and alerts.
+this is a dashboard prototype for monitoring fuel transport operations in one interface. The current version focuses on presenting operational data clearly through separate views for trucks, vessels, pipelines, and alerts.
 
 This project is a **UI prototype built with mock data** to demonstrate the dashboard flow and monitoring experience.
 
